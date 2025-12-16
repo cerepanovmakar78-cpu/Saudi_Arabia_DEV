@@ -1,0 +1,102 @@
+ideas = {
+	country = {
+		SAU_help_people = {
+			picture = AFG_adopt_nufus
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+			stability_factor = 0.05
+			war_support_factor = -0.025
+			production_factory_efficiency_gain_factor = 0.025
+			production_factory_max_efficiency_factor = 0.025
+			production_speed_buildings_factor = 0.025
+		}
+	}
+	SAU_ENG = {
+		picture = ARG_british_influences
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+			stability_factor = 0.02
+				production_speed_arms_factory_factor = 0.01
+				production_speed_dockyard_factor = 0.01
+				consumer_goods_factor = 0.075
+				local_resources_factor = 0.05
+		}
+	}
+		SAU_OLI = {
+			picture = ARG_resource_extration_focus
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+			local_resources_factor = 0.05
+			consumer_goods_factor = -0.1
+		}
+	}
+	SAU_NEW_COMPANY = {
+		picture = HUN_treaty_of_triannon
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+			local_resources_factor = 0.1
+			consumer_goods_factor = -0.05
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	SAU_NEW_COMPANY1 = {
+		picture = generic_production_bonus
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+consumer_goods_factor = -0.25
+		}
+	}
+		SAU_PEOPLE_BAD = {
+		picture = generic_production_bonus
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+stability_factor = -0.3
+war_support_factor = -0.3
+		}
+	}
+	SAU_PEOPLE_BAD1 = {
+		picture = generic_production_bonus
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+stability_factor = -0.15
+war_support_factor = -0.15
+		}
+	}
+}
+}

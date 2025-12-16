@@ -1,0 +1,33 @@
+
+music_station = "base_music"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+# PEACE SONGS ##################
+
+#CHVK
+music = {
+	song = "CHVK"
+	chance = {
+		modifier = {
+			factor = 1
+			tag = SAU
+		}		
+	}	
+}
+music = {
+	song = "SAUDI"
+	chance = {
+		modifier = {
+			factor = 1
+			tag = SAU
+		}		
+	}	
+}

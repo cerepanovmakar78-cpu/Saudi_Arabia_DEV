@@ -1,0 +1,37 @@
+add_namespace = saudiarabianews
+
+news_event = {
+    id = saudiarabianews.1
+    title = saudiarabianews.1.t 
+    desc = saudiarabianews.1.d
+    picture = GFX_news_event_bulgarian_partisans
+    major = yes 
+    is_triggered_only = yes 
+    option = {
+        name = saudiarabianews.1.a
+    }
+}
+news_event = {
+    id = saudiarabianews.2
+    title = saudiarabianews.2.t 
+    desc = saudiarabianews.2.d
+    picture = GFX_news_event_002
+    major = yes 
+    is_triggered_only = yes 
+    option = {
+        name = saudiarabianews.2.a
+        add_war_support = 0.025
+        add_stability = 0.025
+    }
+}
+news_event = {
+    id = saudiarabianews.3
+    title = saudiarabianews.3.t 
+    desc = saudiarabianews.3.d
+    picture = GFX_news_event_002
+    major = yes 
+    is_triggered_only = yes 
+    option = {
+        name = saudiarabianews.3.a
+    }
+}

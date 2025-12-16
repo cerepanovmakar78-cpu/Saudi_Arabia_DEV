@@ -1,0 +1,76 @@
+add_namespace = saudiarabia
+
+country_event = {
+	id = saudiarabia.1
+	title = saudi_arabia.1t
+	desc = saudi_arabia.1d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia1
+		add_manpower = 25000
+add_stability = -0.025
+add_war_support = -0.025
+	}
+	option = {
+		name = saudi_arabia2
+		add_manpower = 50000
+add_stability = -0.05
+add_war_support = -0.05
+	}
+}
+country_event = {
+	id = saudiarabia.2
+	title = saudi_arabia.2t
+	desc = saudi_arabia.2d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia11
+		add_stability = 0.25
+		add_war_support = 0.25
+		add_manpower = 25000
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = saudiarabia.3
+	title = saudi_arabia.3t
+	desc = saudi_arabia.3d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia111
+            add_political_power = 200         
+            add_stability = 0.25
+			add_war_support = 0.25
+			add_manpower = 275000
+	}
+}
+country_event = {
+	id = saudiarabia.4
+	title = saudi_arabia.4t
+	desc = saudi_arabia.4d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia1111
+			add_manpower = 15000
+			add_ideas = {
+				SAU_NEW_COMPANY1
+			}
+	}
+}
+country_event = {
+	id = saudiarabia.5
+	title = saudi_arabia.5t
+	desc = saudi_arabia.5d
+	picture = GFX_report_event_quit_india_movement
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia11111
+			add_ideas = {
+				SAU_PEOPLE_BAD
+			}
+	}
+}

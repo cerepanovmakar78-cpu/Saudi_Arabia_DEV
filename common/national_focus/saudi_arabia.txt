@@ -1,0 +1,736 @@
+focus_tree = {
+	id = National_focuses_of_arabia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAU
+		}
+	}
+focus = {
+	id = SAU_new_oli
+	icon = GFX_focus_generic_befriend_saudi_arabia
+	x = 13  y = 1
+	cost = 10
+	available = { }
+	completion_reward = {
+		add_political_power = 150
+	}
+}
+focus = {
+	id = SAU_new_factory
+	icon = GFX_focus_generic_industry_1
+	x = 16 y = 2
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_oli}
+	#mutually_exclusive = { focus = SAU_new_dockyard focus = SAU_new_arms_factory}
+	completion_reward = {
+859 = { add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes} }
+	859 = {add_extra_state_shared_building_slots = 2}
+	}
+}
+focus = {
+	id = SAU_new_factory1
+	icon = GFX_focus_generic_british_trade
+	x = 16 y = 3
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory}
+	#mutually_exclusive = { focus = SAU_new_dockyard focus = SAU_new_arms_factory}
+	completion_reward = {
+    add_ideas = {SAU_ENG}
+	}
+}
+focus = {
+	id = SAU_new_factory2
+	icon = GFX_goal_generic_oil_refinery
+	x = 15 y = 4
+	cost = 10
+	mutually_exclusive = { focus = SAU_new_factory3}
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory1}
+	completion_reward = {
+   add_ideas = {
+SAU_OLI
+   }
+	}
+}
+focus = {
+	id = SAU_new_factory3
+	icon = GFX_goal_generic_construction
+	x = 17 y = 4
+	cost = 10
+	mutually_exclusive = { focus = SAU_new_factory2 }
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory1}
+	completion_reward = {
+    292 = { add_building_construction = {
+	type = industrial_complex
+	level = 3
+	instant_build = yes} }
+	292 = {add_extra_state_shared_building_slots = 3}
+	}
+
+}
+focus = {
+	id = SAU_new_factory4
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 17 y = 5
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory3}
+	completion_reward = {
+    292 = { add_building_construction = {
+    type = arms_factory 
+	level = 2
+	instant_build = yes} }
+	292 = {add_extra_state_shared_building_slots = 2}
+	}
+}
+focus = {
+	id = SAU_new_factory5
+	icon = GFX_goal_generic_construct_civilian
+	x = 15 y = 5
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory2}
+	completion_reward = {
+		859 = { add_resource = {type = Coal amount = 7} }
+		859 = { add_resource = {type = oil amount = 12} }
+	}
+}
+focus = {
+	id = SAU_new_factory6
+	icon = GFX_focus_generic_steel
+	x = 16 y = 6
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory5 focus = SAU_new_factory4 }
+	completion_reward = {
+		856 = { add_resource = {type = steel amount = 12} }
+
+	}
+}
+focus = {
+	id = SAU_new_factory7
+	icon = GFX_focus_spa_the_spanish_miracle
+	x = 16 y = 7
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory6 }
+	completion_reward = {
+		add_ideas = {
+			SAU_NEW_COMPANY
+		}
+
+	}
+}
+
+focus = {
+	id = SAU_new_arms_factory
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 10 y = 2
+	cost = 10
+	available = { 
+   }
+    prerequisite = { focus = SAU_new_oli}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
+	completion_reward = {
+    army_experience = 150
+	}
+}
+focus = {
+	id = SAU_new_arms_factory2
+	icon = GFX_focus_SOV_mobilization_plan
+	x = 10 y = 4
+	cost = 10
+	available = { 
+}
+    prerequisite = { focus = SAU_new_arms_factory5}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
+	completion_reward = {
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 3500
+            producer = SAU
+        }
+		country_event = { 
+            id = saudiarabia.1
+		}
+	}
+	
+}
+focus = {
+    id = SAU_new_arms_factory3
+    icon = GFX_goal_generic_major_war
+x = 10 y = 5
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory2 }
+
+    available_if_capitulated = no
+    completion_reward = {
+        add_war_support = -0.05
+					create_wargoal = {
+				type = take_state_focus
+				target = YEM
+				expire = 0
+				generator = { 537 555 }
+	}
+    }
+}
+focus = {
+    id = SAU_new_arms_factory6
+    icon = GFX_focus_generic_attack_iran
+x = 10 y = 6
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory3 }
+
+    available_if_capitulated = no
+    completion_reward = {
+        add_war_support = -0.05
+					create_wargoal = {
+				type = take_state_focus
+				target = PER
+				expire = 0
+				generator = { 537 555 }
+	}
+    }
+}
+focus = {
+    id = SAU_new_arms_factory7
+    icon = GFX_focus_generic_attack_afghanistan
+x = 12 y = 6
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory3 }
+
+    available_if_capitulated = no
+    completion_reward = {
+        add_war_support = -0.05
+					create_wargoal = {
+				type = take_state_focus
+				target = AFG
+				expire = 0
+				generator = { 537 555 }
+	}
+    }
+}
+focus = {
+    id = SAU_new_arms_factory11
+    icon = GFX_focus_generic_coal_mining
+x = 12 y = 8
+cost = 10
+ prerequisite = { focus = SAU_new_arms_factory9 }
+  prerequisite = { focus = SAU_new_factory7 }
+	available = {
+	has_full_control_of_state =  266
+	has_full_control_of_state =  267
+	has_full_control_of_state =  49
+	has_full_control_of_state =  293
+	}
+    completion_reward = {
+		267 = { add_resource = {type = Tungsten amount = 3} }
+		267 = { add_resource = {type = Steel amount = 2}}
+		49 = { add_resource = {type = Chromium amount = 7}}
+		49 = { add_resource = {type = Steel amount = 9}}
+		266 = { add_resource = {type = Tungsten amount = 5} }
+		266 = { add_resource = {type = Aluminium amount = 3} }
+    }
+}
+focus = {
+    id = SAU_new_arms_factory12
+    icon = GFX_focus_generic_treaty
+x = 8 y = 8
+cost = 10
+ prerequisite = { focus = SAU_new_arms_factory9 }
+ 
+	available = {
+	has_full_control_of_state =  266
+	has_full_control_of_state =  267
+	has_full_control_of_state =  49
+	has_full_control_of_state =  293
+	}
+    completion_reward = {
+		ROOT = { add_state_core = 656 }
+		ROOT = { add_state_core = 267 }
+		ROOT = { add_state_core = 675 }
+		ROOT = { add_state_core = 1011}
+		ROOT = { add_state_core = 455 }
+		ROOT = { add_state_core = 291 }
+		ROOT = { add_state_core = 421 }
+		ROOT = { add_state_core = 413 }
+		ROOT = { add_state_core = 412 }
+		ROOT = { add_state_core = 410 }
+		ROOT = { add_state_core = 414 }
+		ROOT = { add_state_core = 1002}
+		ROOT = { add_state_core = 411 }
+		ROOT = { add_state_core = 417 }
+		ROOT = { add_state_core = 1001 }
+		ROOT = { add_state_core = 676 }
+		ROOT = { add_state_core = 293 }
+		ROOT = { add_state_core = 992 }
+		ROOT = { add_state_core = 659 }
+		ROOT = { add_state_core = 1016 }
+		ROOT = { add_state_core = 1015 }
+		ROOT = { add_state_core = 294 }
+		ROOT = { add_state_core = 658 }
+		ROOT = { add_state_core = 765 }
+		ROOT = { add_state_core = 1014}
+    }
+}
+focus = {
+    id = SAU_new_arms_factory8
+    icon = GFX_focus_generic_attack_turkey
+x =8 y = 6
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory3 }
+
+    available_if_capitulated = no
+    completion_reward = {
+        add_war_support = -0.05
+					create_wargoal = {
+				type = take_state_focus
+				target = TUR
+				expire = 0
+				generator = { 537 555 }
+	}
+    }
+}
+focus = {
+    id = SAU_new_arms_factory13
+    icon = GFX_focus_generic_industry_3
+x = 16 y = 8
+cost = 10
+    prerequisite = { focus = SAU_new_factory7 }
+
+    available_if_capitulated = no
+    completion_reward = {
+       859 ={ add_building_construction = {type = industrial_complex level = 4}}
+	   859 = {add_extra_state_shared_building_slots = 4}
+        
+    }
+}
+focus = {
+    id = SAU_new_arms_factory14
+    icon = GFX_focus_usa_reestablish_the_gold_standard
+x = 16 y = 9
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory13} 
+    completion_reward = {  country_event = {id = saudiarabia.4}}
+}
+focus = {
+    id = SAU_new_arms_factory9
+    icon = GFX_focus_generic_tank_production
+x = 10  y = 7
+cost = 15
+	prerequisite = { focus = SAU_new_arms_factory7 }
+	prerequisite = { focus = SAU_new_arms_factory6 }
+	prerequisite = { focus = SAU_new_arms_factory8 }
+	available = { has_full_control_of_state =  266
+	has_full_control_of_state =  267
+	has_full_control_of_state =  49
+	has_full_control_of_state =  293
+	}
+    completion_reward = {
+		country_event = { 
+            id = saudiarabia.2
+		}
+    }
+}
+focus = {
+    id = SAU_new_arms_factory10
+    icon = GFX_focus_eng_move_to_secure_the_dominions
+x = 10 y = 8
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory9 }
+    completion_reward = {
+        add_war_support = 0.05
+				create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				expire = 0
+				generator = { 537 555 }}
+				create_wargoal = {
+				type = take_state_focus
+				target = USA
+				expire = 0
+				generator = { 537 555 }}
+
+				create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				expire = 0
+				generator = { 537 555 }}
+				create_wargoal = {
+				type = take_state_focus
+				target = SOV
+				expire = 0
+				generator = { 537 555 }}
+
+				create_wargoal = {
+				type = take_state_focus
+				target = GER
+				expire = 0
+				generator = { 537 555 }}
+
+				create_wargoal = {
+				type = take_state_focus
+				target = ITA
+				expire = 0
+				generator = { 537 555 }
+				}
+	}
+}
+
+
+focus = {
+    id = SAU_total_mobilization_laws
+    icon = GFX_focus_generic_nuclear_development
+    prerequisite = { focus = SAU_new_arms_factory10 }
+	prerequisite = { focus = SAU_new_arms_factory11 }
+	prerequisite = { focus = SAU_new_arms_factory12 }
+    available = {
+        is_major = yes
+        NOT = { has_government = democratic }
+		NOT = { has_government = fascism }
+		NOT = { has_government = communism }
+            has_war_with = SOV
+            has_war_with = ENG
+            has_war_with = USA
+            has_war_with = FRA
+			 has_war_with = GER
+            has_war_with = ITA  }       
+    completion_reward = {
+		play_song = CHVK
+		news_event = {
+	id = saudiarabianews.1
+}
+		news_event = {
+	id = saudiarabianews.3
+}
+	country_event = { 
+            id = saudiarabia.3
+		}
+	country_event = { 
+            id = saudiarabia.5
+		}
+		
+    }
+    cost = 0.2
+    x = 10
+    y = 9
+}
+focus = {
+    id = SAU_total_mobilization_laws1
+    icon = GFX_focus_PLACEHOLDER
+    prerequisite = {}
+		mutually_exclusive = { focus = SAU_total_mobilization_laws2}
+	
+    available_if_capitulated = no
+    available = {
+        is_major = no          
+    } 
+    completion_reward = {
+	
+        SAU = {
+            add_political_power = -150         
+            add_stability = -0.7
+			add_war_support = -0.7
+			add_manpower = -150000
+        }
+    }
+    cost = 5
+    x = 12
+    y = 15
+}
+focus = {
+    id = SAU_total_mobilization_laws2
+    icon = GFX_focus_PLACEHOLDER
+    prerequisite = {}
+    available_if_capitulated = no
+	mutually_exclusive = { focus = SAU_total_mobilization_laws1}
+    available = {
+        is_major = yes 
+	has_full_control_of_state =  266
+	has_full_control_of_state =  267
+	has_full_control_of_state =  49
+	has_full_control_of_state =  293
+	has_full_control_of_state =  219
+	has_full_control_of_state =  16
+	has_full_control_of_state =  126
+	has_full_control_of_state =  361
+	has_full_control_of_state =  64
+	has_full_control_of_state =  2     
+    } 
+    completion_reward = {
+	
+        SAU = {
+            add_political_power = 150           
+            add_stability =   0.7
+			add_war_support = 0.7
+			add_manpower = 150000
+        }
+    }
+    cost = 5
+    x = 8
+    y = 15
+}
+focus = {
+    id = SAU_total_mobilization_laws3
+    icon = GFX_focus_PLACEHOLDER
+    prerequisite = { focus = SAU_total_mobilization_laws}
+    available_if_capitulated = no
+    available = {
+        is_major = yes  
+
+    } 
+    completion_reward = {
+	remove_ideas = {
+		SAU_PEOPLE_BAD
+	}
+		add_ideas= {
+		SAU_PEOPLE_BAD1
+	}
+ 
+    }
+    cost = 1
+    x = 8
+    y = 10
+}
+focus = {
+    id = SAU_total_mobilization_laws4
+    icon = GFX_focus_PLACEHOLDER
+    available_if_capitulated = no
+	 prerequisite = { focus = SAU_total_mobilization_laws}
+    available = {
+        is_major = yes  
+        has_full_control_of_state =  455
+		has_full_control_of_state =  454
+		has_full_control_of_state =  554
+		has_full_control_of_state =  553
+    } 
+    completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+    }
+    cost = 1
+    x = 10
+    y = 10
+}
+focus = {
+    id = SAU_total_mobilization_laws6
+    icon = GFX_focus_PLACEHOLDER
+    available_if_capitulated = no
+	 prerequisite = { focus = SAU_total_mobilization_laws4}
+    available = {
+        is_major = yes  
+ 
+    } 
+    completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+    }
+    cost = 1
+    x = 10
+    y = 11
+}
+focus = {
+    id = SAU_total_mobilization_laws5
+    icon = GFX_focus_PLACEHOLDER
+    prerequisite = { focus = SAU_total_mobilization_laws}
+    available_if_capitulated = no
+    available = {
+        is_major = yes  
+         
+    } 
+    completion_reward = {
+    }
+    cost = 1
+    x = 12
+    y = 10
+}
+focus = {
+	id = SAU_new_dockyard
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 21 y = 2
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_army}
+	completion_reward = {
+	navy_experience = 150
+	}
+}
+focus = {
+	id = SAU_new_dockyard1
+	icon = GFX_focus_generic_navy_battleship2
+	x = 22 y = 3
+	cost = 10
+		mutually_exclusive = { focus = SAU_new_dockyard2 }
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_dockyard}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_arms_factory}
+	completion_reward = {
+	855 = {add_building_construction = { type = dockyard level = 1 instant_build = yes}}
+	855 = {add_extra_state_shared_building_slots = 1}
+				add_tech_bonus = {
+				name = SAU_new_dockyard1
+				bonus = 1.5
+				uses = 2
+				category = bb_tech
+				category = bc_tech	
+	}
+}
+}
+focus = {
+	id = SAU_new_dockyard2
+	icon = GFX_goal_generic_navy_submarine
+	x = 20 y = 3
+	cost = 10
+	mutually_exclusive = { focus = SAU_new_dockyard1 }
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_dockyard}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_arms_factory}
+	completion_reward = {
+855 = {add_building_construction = { type = dockyard level = 1 instant_build = yes}}
+855 = {add_extra_state_shared_building_slots = 1}
+			add_tech_bonus = {
+				name = SAU_new_dockyard2
+				bonus = 1.5
+				uses = 2
+				category = ss_tech
+			}
+
+        }
+}
+focus = {
+	id = SAU_new_dockyard3
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = 21 y = 5
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_dockyard2 focus = SAU_new_dockyard4}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_arms_factory}
+	completion_reward = {
+856 = { add_building_construction = { type = dockyard level = 3 instant_build = yes } }
+856 = { add_extra_state_shared_building_slots = 3}
+			add_doctrine_cost_reduction = {
+				name = FRA_naval_doctrine
+				cost_reduction = 0.75
+				uses = 3
+				category = naval_doctrine
+			}
+        }
+}
+focus = {
+	id = SAU_new_dockyard4
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = 22 y = 4
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_dockyard2 focus = SAU_new_dockyard1}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_arms_factory}
+	completion_reward = {
+856 = { add_building_construction = { type = dockyard level = 3 instant_build = yes } }
+
+
+        }
+}
+
+focus = {
+    id = SAU_new_arms_factory5
+    icon = GFX_focus_ETH_freedom_at_gunpoint
+x = 10 y = 3
+cost = 10
+    prerequisite = { focus = SAU_new_arms_factory }
+    available_if_capitulated = no
+    completion_reward = {
+					army_experience = 15
+			add_ideas = SAU_help_people
+}
+}
+focus = {
+    id = SAU_new_army
+    icon = GFX_focus_generic_limited_social_mobilization
+x = 25 y = 1
+cost = 10
+    prerequisite = {}
+    available_if_capitulated = no
+    completion_reward = {
+	army_experience = 50
+	navy_experience = 50
+	air_experience = 50
+}
+}
+focus = {
+    id = SAU_new_army2
+    icon = GFX_goal_continuous_armor_production
+x = 29 y = 2
+cost = 10
+    prerequisite = {focus = SAU_new_army}
+    completion_reward = {
+	army_experience = 150
+}
+}
+focus = {
+    id = SAU_new_army3
+    icon = GFX_goal_generic_air_fighter2
+x = 25 y = 2
+cost = 10
+    prerequisite = {focus = SAU_new_army}
+    completion_reward = {
+    air_experience = 150
+}
+}
+focus = {
+    id = SAU_new_army5
+    icon = GFX_goal_generic_navy_carrier
+x = 24 y = 5
+cost = 10
+    prerequisite = {focus = SAU_new_army3}
+	prerequisite = {focus = SAU_new_dockyard4}
+    completion_reward = {
+
+}
+}
+focus = {
+    id = SAU_new_army4
+	icon = GFX_focus_generic_military_dictatorship
+x = 29 y = 3
+cost = 10
+    prerequisite = {focus = SAU_new_army2}
+    completion_reward = {
+	news_event = {
+		id = saudiarabianews.2
+	}
+}
+}
+focus = {
+    id = SAU_new_army6
+	icon = GFX_focus_generic_military_dictatorship
+x = 29 y = 4
+cost = 10
+    prerequisite = {focus = SAU_new_army4}
+    completion_reward = {
+	news_event = {
+	}
+}
+}
+}
+
+
