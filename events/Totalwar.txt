@@ -72,5 +72,27 @@ country_event = {
 			add_ideas = {
 				SAU_PEOPLE_BAD
 			}
+			remove_ideas {
+				SAU_help_people
+			}
+	}
+}
+country_event = {
+	id = saudiarabia.6
+	title = saudi_arabia.6t
+	desc = saudi_arabia.6d
+	picture = GFX_report_event_quit_india_movement
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia6.a
+			add_ideas = {
+				SAU_NEW_COMPANY2
+			}
+			remove_ideas {
+				SAU_NEW_COMPANY
+			}
+						remove_ideas {
+				SAU_NEW_COMPANY1
+			}
 	}
 }

@@ -419,6 +419,9 @@ focus = {
 	country_event = { 
             id = saudiarabia.5
 		}
+			country_event = { 
+            id = saudiarabia.6
+		}
 		
     }
     cost = 0.2
