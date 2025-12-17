@@ -372,11 +372,6 @@ cost = 10
 				target = ENG
 				expire = 0
 				generator = { 537 555 }}
-				create_wargoal = {
-				type = take_state_focus
-				target = SOV
-				expire = 0
-				generator = { 537 555 }}
 
 				create_wargoal = {
 				type = take_state_focus
@@ -405,7 +400,6 @@ focus = {
         NOT = { has_government = democratic }
 		NOT = { has_government = fascism }
 		NOT = { has_government = communism }
-            has_war_with = SOV
             has_war_with = ENG
             has_war_with = USA
             has_war_with = FRA
@@ -434,7 +428,7 @@ focus = {
 focus = {
     id = SAU_total_mobilization_laws1
     icon = GFX_focus_PLACEHOLDER
-    prerequisite = {}
+    prerequisite = {focus = SAU_total_mobilization_laws6}
 		mutually_exclusive = { focus = SAU_total_mobilization_laws2}
 	
     available_if_capitulated = no
@@ -452,12 +446,12 @@ focus = {
     }
     cost = 5
     x = 12
-    y = 15
+    y = 12
 }
 focus = {
     id = SAU_total_mobilization_laws2
     icon = GFX_focus_PLACEHOLDER
-    prerequisite = {}
+    prerequisite = {focus = SAU_total_mobilization_laws6}
     available_if_capitulated = no
 	mutually_exclusive = { focus = SAU_total_mobilization_laws1}
     available = {
@@ -466,7 +460,6 @@ focus = {
 	has_full_control_of_state =  267
 	has_full_control_of_state =  49
 	has_full_control_of_state =  293
-	has_full_control_of_state =  219
 	has_full_control_of_state =  16
 	has_full_control_of_state =  126
 	has_full_control_of_state =  361
@@ -484,7 +477,7 @@ focus = {
     }
     cost = 5
     x = 8
-    y = 15
+    y = 12
 }
 focus = {
     id = SAU_total_mobilization_laws3
