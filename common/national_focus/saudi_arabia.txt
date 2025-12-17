@@ -439,10 +439,10 @@ focus = {
 	
     available_if_capitulated = no
     available = {
-        is_major = no          
+        is_major = no      
     } 
     completion_reward = {
-	
+
         SAU = {
             add_political_power = -150         
             add_stability = -0.7
@@ -535,7 +535,11 @@ focus = {
 	 prerequisite = { focus = SAU_total_mobilization_laws4}
     available = {
         is_major = yes  
- 
+         has_full_control_of_state =  907
+		has_full_control_of_state =  447
+		has_full_control_of_state =  16
+		has_full_control_of_state =  126
+		has_full_control_of_state =  361
     } 
     completion_reward = {
 		add_stability = 0.05
