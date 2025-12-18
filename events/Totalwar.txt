@@ -105,7 +105,7 @@ country_event = {
 	option = {
 		name = saudi_arabia7.a
         add_political_power = 25
-		859 = {add_resource {type = oil amount = 9 }}
+		859 = { add_resource = {type = oil amount = 12} }
 		add_manpower = -500
 	}
 }
