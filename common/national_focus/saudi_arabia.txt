@@ -252,7 +252,6 @@ focus = {
 x = 8 y = 8
 cost = 10
  prerequisite = { focus = SAU_new_arms_factory9 }
- 
 	available = {
 	has_full_control_of_state =  266
 	has_full_control_of_state =  267
