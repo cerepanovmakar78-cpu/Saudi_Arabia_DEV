@@ -91,7 +91,7 @@ country_event = {
 			remove_ideas {
 				SAU_NEW_COMPANY
 			}
-						remove_ideas {
+				remove_ideas {
 				SAU_NEW_COMPANY1
 			}
 	}
