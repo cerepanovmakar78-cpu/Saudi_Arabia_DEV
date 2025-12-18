@@ -96,3 +96,16 @@ country_event = {
 			}
 	}
 }
+country_event = {
+	id = saudiarabia.7
+	title = saudi_arabia.7t
+	desc = saudi_arabia.7d
+	picture = GFX_report_event_generic_truck
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia7.a
+        add_political_power = 25
+		859 = {add_resource {type = oil amount = 9 }}
+		add_manpower = -500
+	}
+}
