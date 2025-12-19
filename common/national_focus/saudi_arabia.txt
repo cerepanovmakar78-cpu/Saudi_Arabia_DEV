@@ -251,9 +251,8 @@ cost = 10
 				type = take_state_focus
 				target = PER
 				expire = 0
-				generator = { 537 555 }
-	}
-    }
+				generator = { 537 555 }}
+}
 }
 focus = {
     id = SAU_new_arms_factory7
