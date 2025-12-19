@@ -1,6 +1,6 @@
 ﻿l_russian:
-SAU_new_factory1:0 "Торговля с Англией"
-SAU_new_factory1_desc:0 "Начать торговлю с Англией хорошее решение. Но чем это закончиться?"
+SAU_new_factory1:0 "Заключить договор с Англией"
+SAU_new_factory1_desc:0 "Мы заключим договор для продажи нефти"
 SAU_new_oli:0 "Начало политики"
 SAU_new_oli_desc:0 "Начинается политика Саудовской Аравии. Но чем же это закончиться?"
 SAU_new_factory:0 "Новая нефть"
@@ -17,6 +17,12 @@ SAU_new_factory6:0 "Построить металлургический заво
 SAU_new_factory6_desc:0 "Нам нужен металл для промышленности"
 SAU_new_factory7:0 "Привлечь компании"
 SAU_new_factory7_desc:0 "Нам нужны иностраные компании для промышленности"
+SAU_new_factory8:0 "Заключить договор с США"
+SAU_new_factory8_desc:0 "Мы заключим договор для продажи нефти"
+SAU_new_factory9:0 "Построить НПЗ"
+SAU_new_factory9_desc:0 "Нам нужно сырьё"
+SAU_new_factory10:0 "Построить топливные хранилища"
+SAU_new_factory10_desc:0 "Нам нужно хранилища"
 ##########
 SAU_new_dockyard:0 "Получить опыт"
 SAU_new_dockyard_desc:0 "Нам нужен опыт"

@@ -20,7 +20,7 @@ focus = {
 focus = {
 	id = SAU_new_factory
 	icon = GFX_focus_generic_resource_extraction
-	x = 16 y = 2
+	x = 15 y = 2
 	cost = 10
 	available = { 
     }
@@ -34,8 +34,8 @@ focus = {
 }
 focus = {
 	id = SAU_new_factory1
-	icon = GFX_focus_generic_british_trade
-	x = 16 y = 3
+	icon = GFX_focus_chi_british_cooperation
+	x = 14 y = 3
 	cost = 10
 	available = { 
     }
@@ -46,14 +46,62 @@ focus = {
 	}
 }
 focus = {
+	id = SAU_new_factory8
+	icon = GFX_focus_generic_befriend_usa
+	x = 16 y = 3
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory}
+	#mutually_exclusive = { focus = SAU_new_dockyard focus = SAU_new_arms_factory}
+	completion_reward = {
+    add_ideas = {SAU_USA}
+	}
+}
+focus = {
+	id = SAU_new_factory9
+	icon = GFX_SOV_synthetic_rubber_ccp_2d_sov_compatibility
+	x = 13 y = 4
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory8}
+	prerequisite = { focus = SAU_new_factory1}
+	#mutually_exclusive = { focus = SAU_new_dockyard focus = SAU_new_arms_factory}
+	completion_reward = {
+    859 = { add_building_construction = {
+	type = Synthetic_Refinery
+	level = 2
+	instant_build = yes} }
+	859 = {add_extra_state_shared_building_slots = 2}
+	}
+}
+focus = {
+	id = SAU_new_factory10
+	icon = GFX_focus_generic_stockpile_fuel
+	x = 13 y = 5
+	cost = 10
+	available = { 
+    }
+    prerequisite = { focus = SAU_new_factory9}
+	#mutually_exclusive = { focus = SAU_new_dockyard focus = SAU_new_arms_factory}
+	completion_reward = {
+    292 = { add_building_construction = {
+	type = Fuel_Silo
+	level = 4
+	instant_build = yes} }
+	292 = {add_extra_state_shared_building_slots = 4}
+	}
+}
+focus = {
 	id = SAU_new_factory2
 	icon = GFX_goal_generic_oil_refinery
 	x = 15 y = 4
 	cost = 10
-	mutually_exclusive = { focus = SAU_new_factory3}
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory1}
+	prerequisite = { focus = SAU_new_factory8}
 	completion_reward = {
    add_ideas = {
 SAU_OLI
@@ -65,10 +113,10 @@ focus = {
 	icon = GFX_goal_generic_construction
 	x = 17 y = 4
 	cost = 10
-	mutually_exclusive = { focus = SAU_new_factory2 }
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory1}
+	prerequisite = { focus = SAU_new_factory8}
 	completion_reward = {
     292 = { add_building_construction = {
 	type = industrial_complex
@@ -110,20 +158,21 @@ focus = {
 focus = {
 	id = SAU_new_factory6
 	icon = GFX_focus_generic_steel
-	x = 16 y = 6
+	x = 15 y = 6
 	cost = 10
 	available = { 
     }
-    prerequisite = { focus = SAU_new_factory5 focus = SAU_new_factory4 }
+    prerequisite = {focus = SAU_new_factory5}
+	prerequisite = {focus = SAU_new_factory10}
+	prerequisite = {focus = SAU_new_factory4}
 	completion_reward = {
 		856 = { add_resource = {type = steel amount = 12} }
-
 	}
 }
 focus = {
 	id = SAU_new_factory7
 	icon = GFX_focus_spa_the_spanish_miracle
-	x = 16 y = 7
+	x = 15 y = 7
 	cost = 10
 	available = { 
     }
@@ -290,7 +339,7 @@ cost = 10
 focus = {
     id = SAU_new_arms_factory8
     icon = GFX_focus_generic_attack_turkey
-x =8 y = 6
+x = 8 y = 6
 cost = 10
     prerequisite = { focus = SAU_new_arms_factory3 }
 
@@ -308,7 +357,7 @@ cost = 10
 focus = {
     id = SAU_new_arms_factory13
     icon = GFX_focus_generic_industry_3
-x = 16 y = 8
+x = 15 y = 8
 cost = 10
     prerequisite = { focus = SAU_new_factory7 }
 
@@ -322,7 +371,7 @@ cost = 10
 focus = {
     id = SAU_new_arms_factory14
     icon = GFX_focus_usa_reestablish_the_gold_standard
-x = 16 y = 9
+x = 15 y = 9
 cost = 10
     prerequisite = { focus = SAU_new_arms_factory13} 
     completion_reward = {  country_event = {id = saudiarabia.4}}
