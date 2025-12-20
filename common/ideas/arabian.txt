@@ -68,10 +68,10 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-			local_resources_factor = 0.1
-			consumer_goods_factor = -0.05
-			production_factory_max_efficiency_factor = 0.1
-			production_factory_efficiency_gain_factor = 0.1
+			local_resources_factor = 0.15
+			consumer_goods_factor = -0.025
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
 		}
 	}
 	SAU_NEW_COMPANY1 = {
@@ -83,7 +83,7 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-consumer_goods_factor = -0.25
+consumer_goods_factor = -0.15
 		}
 	}
 		SAU_PEOPLE_BAD = {

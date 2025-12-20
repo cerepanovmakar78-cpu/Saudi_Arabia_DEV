@@ -21,7 +21,7 @@ focus = {
 	id = SAU_new_factory
 	icon = GFX_focus_generic_resource_extraction
 	x = 15 y = 2
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_oli}
@@ -36,7 +36,7 @@ focus = {
 	id = SAU_new_factory1
 	icon = GFX_focus_chi_british_cooperation
 	x = 14 y = 3
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory}
@@ -49,7 +49,7 @@ focus = {
 	id = SAU_new_factory8
 	icon = GFX_focus_generic_befriend_usa
 	x = 16 y = 3
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory}
@@ -62,7 +62,7 @@ focus = {
 	id = SAU_new_factory9
 	icon = GFX_SOV_synthetic_rubber_ccp_2d_sov_compatibility
 	x = 13 y = 4
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory8}
@@ -80,7 +80,7 @@ focus = {
 	id = SAU_new_factory10
 	icon = GFX_focus_generic_stockpile_fuel
 	x = 13 y = 5
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory9}
@@ -97,7 +97,7 @@ focus = {
 	id = SAU_new_factory2
 	icon = GFX_goal_generic_oil_refinery
 	x = 15 y = 4
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory1}
@@ -112,7 +112,7 @@ focus = {
 	id = SAU_new_factory3
 	icon = GFX_goal_generic_construction
 	x = 17 y = 4
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory1}
@@ -130,7 +130,7 @@ focus = {
 	id = SAU_new_factory4
 	icon = GFX_goal_generic_construct_mil_factory
 	x = 17 y = 5
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory3}
@@ -146,7 +146,7 @@ focus = {
 	id = SAU_new_factory5
 	icon = GFX_goal_generic_construct_civilian
 	x = 15 y = 5
-	cost = 10
+	cost = 5
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory2}
@@ -158,15 +158,26 @@ focus = {
 focus = {
 	id = SAU_new_factory6
 	icon = GFX_focus_generic_steel
-	x = 15 y = 6
-	cost = 10
+	x = 16 y = 6
+	cost = 5
 	available = { 
     }
-    prerequisite = {focus = SAU_new_factory5}
-	prerequisite = {focus = SAU_new_factory10}
-	prerequisite = {focus = SAU_new_factory4}
+    prerequisite = {focus = SAU_new_factory5 focus = SAU_new_factory10 focus = SAU_new_factory4}
 	completion_reward = {
-		856 = { add_resource = {type = steel amount = 12} }
+		856 = { add_resource = {type = steel amount = 24} }
+	}
+}
+focus = {
+	id = SAU_new_factory11
+	icon = GFX_focus_generic_aluminum
+	x = 14 y = 6
+	cost = 5
+	available = { 
+    }
+    prerequisite = {focus = SAU_new_factory5 focus = SAU_new_factory10 focus = SAU_new_factory4}
+	completion_reward = {
+		679 = { add_resource = {type = Aluminium amount = 6} }
+		679 = { add_resource = {type = Tungsten amount = 4} }
 	}
 }
 focus = {
@@ -177,6 +188,7 @@ focus = {
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory6 }
+	prerequisite = { focus = SAU_new_factory11 }
 	completion_reward = {
 		add_ideas = {
 			SAU_NEW_COMPANY
@@ -353,9 +365,9 @@ cost = 10
     }
 }
 focus = {
-    id = SAU_new_arms_factory13
+    id = SAU_new_factory13
     icon = GFX_focus_generic_industry_3
-x = 15 y = 8
+x = 16 y = 8
 cost = 10
     prerequisite = { focus = SAU_new_factory7 }
 
@@ -367,12 +379,34 @@ cost = 10
     }
 }
 focus = {
-    id = SAU_new_arms_factory14
-    icon = GFX_focus_usa_reestablish_the_gold_standard
+    id = SAU_new_factory12
+    icon = GFX_goal_generic_construct_mil_factory
+x = 14 y = 8
+cost = 10
+    prerequisite = { focus = SAU_new_factory7} 
+    completion_reward = {  
+        859 = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+            }
+		}
+}
+}
+focus = {
+    id = SAU_new_factory14
+    icon = GFX_focus_CONGO_gold_and_diamonds
 x = 15 y = 9
 cost = 10
-    prerequisite = { focus = SAU_new_arms_factory13} 
-    completion_reward = {  country_event = {id = saudiarabia.4}}
+    prerequisite = { focus = SAU_new_factory7} 
+	prerequisite = { focus = SAU_new_factory13} 
+	prerequisite = { focus = SAU_new_factory12} 
+ completion_reward = {  
+
+country_event = { id = saudiarabia.4}
+}
 }
 focus = {
     id = SAU_new_arms_factory9
