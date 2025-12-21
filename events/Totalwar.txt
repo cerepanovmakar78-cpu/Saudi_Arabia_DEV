@@ -8,15 +8,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = saudi_arabia1
-		add_manpower = 25000
-add_stability = -0.025
-add_war_support = -0.025
-	}
-	option = {
-		name = saudi_arabia2
 		add_manpower = 50000
 add_stability = -0.05
 add_war_support = -0.05
+	}
+	option = {
+		name = saudi_arabia2
+		add_manpower = 100000
+add_stability = -0.1
+add_war_support = -0.1
 	}
 }
 country_event = {

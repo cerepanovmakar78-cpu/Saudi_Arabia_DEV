@@ -199,7 +199,7 @@ focus = {
 
 focus = {
 	id = SAU_new_arms_factory
-	icon = GFX_goal_generic_construct_mil_factory
+	icon = GFX_focus_GER_support_the_proletarian_uprising
 	x = 10 y = 2
 	cost = 10
 	available = { 
@@ -207,7 +207,10 @@ focus = {
     prerequisite = { focus = SAU_new_oli}
 	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
 	completion_reward = {
-    army_experience = 150
+    army_experience = 25
+	add_command_power = 75
+	add_political_power = 40
+	add_manpower = 1000
 	}
 }
 focus = {
@@ -218,18 +221,71 @@ focus = {
 	available = { 
 }
     prerequisite = { focus = SAU_new_arms_factory5}
+	prerequisite = { focus = SAU_new_arms_factory1}
+	prerequisite = { focus = SAU_new_arms_factory14}
 	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
 	completion_reward = {
         add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 3500
+            amount = 15000
             producer = SAU
         }
 		country_event = { 
             id = saudiarabia.1
 		}
 	}
-	
+}
+focus = {
+	id = SAU_new_arms_factory1
+	icon = GFX_goal_generic_territory_or_war
+	x = 12 y = 3
+	cost = 5
+	available = { 
+}
+    prerequisite = { focus = SAU_new_arms_factory}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
+	completion_reward = {
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+            producer = SAU
+        }
+		add_command_power = 150
+	}
+}
+focus = {
+    id = SAU_new_arms_factory5
+    icon = GFX_focus_ETH_freedom_at_gunpoint
+x = 10 y = 3
+cost = 5
+    prerequisite = { focus = SAU_new_arms_factory }
+    available_if_capitulated = no
+    completion_reward = {
+					army_experience = 15
+			add_ideas = SAU_help_people
+}
+}
+focus = {
+	id = SAU_new_arms_factory14
+	icon = GFX_focus_RAJ_lions_of_the_great_war
+	x = 8 y = 3
+	cost = 5
+	available = { 
+}
+    prerequisite = { focus = SAU_new_arms_factory}
+	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
+	completion_reward = {
+		add_ideas = {
+			 SAU_WAR_1
+		}
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+            producer = SAU
+        }
+		add_command_power = 10
+
+	}
 }
 focus = {
     id = SAU_new_arms_factory3
@@ -240,7 +296,7 @@ cost = 10
 
     available_if_capitulated = no
     completion_reward = {
-        add_war_support = -0.05
+        add_war_support = 0.005
 					create_wargoal = {
 				type = take_state_focus
 				target = YEM
@@ -258,7 +314,7 @@ cost = 10
 
     available_if_capitulated = no
     completion_reward = {
-        add_war_support = -0.05
+        add_war_support = 0.005
 					create_wargoal = {
 				type = take_state_focus
 				target = PER
@@ -275,7 +331,7 @@ cost = 10
 
     available_if_capitulated = no
     completion_reward = {
-        add_war_support = -0.05
+        add_war_support = 0.005
 					create_wargoal = {
 				type = take_state_focus
 				target = AFG
@@ -355,7 +411,7 @@ cost = 10
 
     available_if_capitulated = no
     completion_reward = {
-        add_war_support = -0.05
+        add_war_support = 0.005
 					create_wargoal = {
 				type = take_state_focus
 				target = TUR
@@ -425,6 +481,7 @@ cost = 15
 		country_event = { 
             id = saudiarabia.2
 		}
+		play_song = SAUDI
     }
 }
 focus = {
@@ -549,7 +606,8 @@ focus = {
 	has_full_control_of_state =  2     
     } 
     completion_reward = {
-	
+	remove_ideas = {SAU_PEOPLE_BAD1}
+	remove_ideas = {SAU_NEW_COMPANY4}
         SAU = {
             add_political_power = 150           
             add_stability =   0.7
@@ -634,6 +692,8 @@ focus = {
          
     } 
     completion_reward = {
+		add_ideas = {SAU_NEW_COMPANY4}
+		remove_ideas = SAU_NEW_COMPANY2
     }
     cost = 1
     x = 12
@@ -731,18 +791,7 @@ focus = {
         }
 }
 
-focus = {
-    id = SAU_new_arms_factory5
-    icon = GFX_focus_ETH_freedom_at_gunpoint
-x = 10 y = 3
-cost = 10
-    prerequisite = { focus = SAU_new_arms_factory }
-    available_if_capitulated = no
-    completion_reward = {
-					army_experience = 15
-			add_ideas = SAU_help_people
-}
-}
+
 focus = {
     id = SAU_new_army
     icon = GFX_focus_generic_limited_social_mobilization
