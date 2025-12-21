@@ -38,6 +38,7 @@ recruit_character = SAU_ali_muhammed_khan
 recruit_character = SAU_faisal_al_saud
 recruit_character = SAU_faisal_saud
 recruit_character = SAU_gholam_wali
+recruit_character = SAU_Chicken
 
 1939.1.1 = {
 	add_command_power = 100

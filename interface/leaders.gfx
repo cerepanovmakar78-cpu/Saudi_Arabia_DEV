@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_CHICKEN"
+        texturefile = "gfx\leaders\SAU\Chicken_king2.dds"
+    }
+}

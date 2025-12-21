@@ -1,8 +1,0 @@
-spriteTypes = {
-
-    spriteType = {
-        name = "GFX_focus_my_awesome_focus_icon" # Это имя будет использоваться в файле фокуса
-        texturefile = "gfx/interface/goals/focus_SAU_TOTALWAR.dds"
-        effectFile = "gfx/FX/buttonstate_only_shine.lua" # Применяет эффект свечения
-    }
-    }

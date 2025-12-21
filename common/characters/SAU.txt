@@ -12,6 +12,19 @@ characters={
 			id=-1
 		}
 	}
+		SAU_Chicken={
+		name="Bin Salman Al Saud2"
+		portraits={
+			civilian={
+				large=gfx\leaders\SAU\Chicken_king2.dds
+			}
+		}
+		country_leader = {
+			ideology=anarchist_communism
+			expire="1970.1.1.1"
+			id=-1
+		}
+	}
 	SAU_philip_gordon_lee={
 		advisor={
 			slot = navy_chief
