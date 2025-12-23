@@ -207,10 +207,10 @@ focus = {
     prerequisite = { focus = SAU_new_oli}
 	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
 	completion_reward = {
-    army_experience = 25
-	add_command_power = 75
-	add_political_power = 40
-	add_manpower = 1000
+    army_experience = 50
+	add_command_power = 50
+	add_political_power = 25
+	add_manpower = 750
 	}
 }
 focus = {
@@ -227,7 +227,7 @@ focus = {
 	completion_reward = {
         add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 15000
+            amount = 14500
             producer = SAU
         }
 		country_event = { 
@@ -247,10 +247,10 @@ focus = {
 	completion_reward = {
         add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 1500
+            amount = 1250
             producer = SAU
         }
-		add_command_power = 150
+		add_command_power = 75
 	}
 }
 focus = {
@@ -843,13 +843,11 @@ focus = {
 	x = 22 y = 4
 	cost = 10
 	available = { 
+		has_full_control_of_state = -1
     }
     prerequisite = { focus = SAU_new_dockyard2 focus = SAU_new_dockyard1}
 	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_arms_factory}
 	completion_reward = {
-856 = { add_building_construction = { type = dockyard level = 3 instant_build = yes } }
-
-
         }
 }
 
@@ -858,7 +856,7 @@ focus = {
     id = SAU_new_army
     icon = GFX_focus_generic_limited_social_mobilization
 x = 25 y = 1
-cost = 10
+cost = 5
     prerequisite = {}
     available_if_capitulated = no
     completion_reward = {
@@ -871,38 +869,36 @@ focus = {
     id = SAU_new_army2
     icon = GFX_goal_continuous_armor_production
 x = 29 y = 2
-cost = 10
+cost = 50
+available = {
+	has_full_control_of_state = -1
+}
     prerequisite = {focus = SAU_new_army}
     completion_reward = {
 	army_experience = 150
 }
 }
 focus = {
-    id = SAU_new_army3
+    id = SAU_new_air
     icon = GFX_goal_generic_air_fighter2
 x = 25 y = 2
-cost = 10
+cost = 50
+available = {
+	has_full_control_of_state = -1
+}
     prerequisite = {focus = SAU_new_army}
     completion_reward = {
     air_experience = 150
 }
 }
 focus = {
-    id = SAU_new_army5
-    icon = GFX_goal_generic_navy_carrier
-x = 24 y = 5
-cost = 10
-    prerequisite = {focus = SAU_new_army3}
-	prerequisite = {focus = SAU_new_dockyard4}
-    completion_reward = {
-
-}
-}
-focus = {
     id = SAU_new_army4
 	icon = GFX_focus_generic_military_dictatorship
 x = 29 y = 3
-cost = 10
+cost = 50
+available = {
+	has_full_control_of_state = -1
+}
     prerequisite = {focus = SAU_new_army2}
     completion_reward = {
 	news_event = {
@@ -914,11 +910,12 @@ focus = {
     id = SAU_new_army6
 	icon = GFX_focus_generic_military_dictatorship
 x = 29 y = 4
-cost = 10
-    prerequisite = {focus = SAU_new_army4}
-    completion_reward = {
-	news_event = {
-	}
+cost = 50
+available = {
+	has_full_control_of_state = -1
+}
+prerequisite = {focus = SAU_new_army4}
+completion_reward = {
 }
 }
 }

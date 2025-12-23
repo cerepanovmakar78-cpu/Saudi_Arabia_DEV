@@ -18,6 +18,13 @@ add_war_support = -0.05
 add_stability = -0.1
 add_war_support = -0.1
 	}
+		option = {
+		name = saudi_arabia3
+		country_event = {id = saudiarabia.8}
+		add_manpower = 1000000
+add_stability = -1
+add_war_support = -1
+	}
 }
 country_event = {
 	id = saudiarabia.2
@@ -115,5 +122,17 @@ country_event = {
         add_political_power = 25
 		859 = { add_resource = {type = oil amount = 12} }
 		add_manpower = -500
+	}
+}
+country_event = {
+	id = saudiarabia.8
+	title = saudi_arabia.8t
+	desc = saudi_arabia.8d
+	picture = GFX_report_event_generic_truck
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia8.a
+add_command_power = -999
+add_political_power = -999
 	}
 }

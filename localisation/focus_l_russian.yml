@@ -40,6 +40,8 @@ SAU_new_dockyard2:0 "Построить подлодки"
 SAU_new_dockyard2_desc:0 "Нам нужны подлодки чтобы топить конвои"
 SAU_new_dockyard3:0 "Реформа ВМФ"
 SAU_new_dockyard3_desc:0 "Мы закончили реформу ВМФ"
+SAU_new_dockyard4:0 "В РАЗРАБОТКЕ"
+SAU_new_dockyard4_desc:0 "В РАЗРАБОТКЕ"
 ##########
 SAU_new_arms_factory:0 "Подготовиться к будущим войнам"
 SAU_new_arms_factory_desc:0 "-"
@@ -90,6 +92,18 @@ SAU_total_mobilization_laws9:0 "В РАЗРАБОТКЕ! "
 SAU_total_mobilization_laws9_desc:0 "В РАЗРАБОТКЕ!"
 SAU_total_mobilization_laws10:0 "В РАЗРАБОТКЕ! "
 SAU_total_mobilization_laws10_desc:0 "В РАЗРАБОТКЕ!"
+######################
+SAU_new_army:0 "В РАЗРАБОТКЕ!"
+SAU_new_army_desc:0 "В РАЗРАБОТКЕ!"
+SAU_new_army2:0 "В РАЗРАБОТКЕ!"
+SAU_new_army2_desc:0 "В РАЗРАБОТКЕ!"
+SAU_new_army4:0 "В РАЗРАБОТКЕ!"
+SAU_new_army4_desc:0 "В РАЗРАБОТКЕ!"
+SAU_new_army6:0 "В РАЗРАБОТКЕ!"
+SAU_new_army6_desc:0 "В РАЗРАБОТКЕ!"
+SAU_new_air:0 "В РАЗРАБОТКЕ!"
+############################
+SAU_new_air_desc:0 "В РАЗРАБОТКЕ!"
 
 
 
