@@ -4,7 +4,7 @@ news_event = {
     id = saudiarabianews.1
     title = saudiarabianews.1.t 
     desc = saudiarabianews.1.d
-    picture = GFX_news_event_bulgarian_partisans
+    picture = GFX_EVENT_SAUDI_ARABIA
     major = yes 
     is_triggered_only = yes 
     option = {
@@ -20,8 +20,6 @@ news_event = {
     is_triggered_only = yes 
     option = {
         name = saudiarabianews.2.a
-        add_war_support = 0.025
-        add_stability = 0.025
     }
 }
 news_event = {

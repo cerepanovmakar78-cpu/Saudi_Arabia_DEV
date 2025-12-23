@@ -271,12 +271,13 @@ focus = {
 	x = 8 y = 3
 	cost = 5
 	available = { 
+	
 }
     prerequisite = { focus = SAU_new_arms_factory}
 	#mutually_exclusive = { focus = SAU_new_factory focus = SAU_new_dockyard}
 	completion_reward = {
 		add_ideas = {
-			 SAU_WAR_1
+			 SAU_NEW_COMPANY3
 		}
         add_equipment_to_stockpile = {
             type = infantry_equipment
@@ -531,6 +532,7 @@ focus = {
     prerequisite = { focus = SAU_new_arms_factory10 }
 	prerequisite = { focus = SAU_new_arms_factory11 }
 	prerequisite = { focus = SAU_new_arms_factory12 }
+	prerequisite = { focus = SAU_new_factory14}
     available = {
         is_major = yes
         NOT = { has_government = democratic }
@@ -539,7 +541,7 @@ focus = {
             has_war_with = ENG
             has_war_with = USA
             has_war_with = FRA
-			 has_war_with = GER
+		    has_war_with = GER
             has_war_with = ITA  }       
     completion_reward = {
 		play_song = CHVK
@@ -562,7 +564,7 @@ focus = {
     }
     cost = 0.2
     x = 10
-    y = 9
+    y = 10
 }
 focus = {
     id = SAU_total_mobilization_laws1
@@ -585,7 +587,7 @@ focus = {
     }
     cost = 5
     x = 12
-    y = 12
+    y = 13
 }
 focus = {
     id = SAU_total_mobilization_laws2
@@ -617,7 +619,7 @@ focus = {
     }
     cost = 5
     x = 8
-    y = 12
+    y = 13
 }
 focus = {
     id = SAU_total_mobilization_laws3
@@ -639,7 +641,7 @@ focus = {
     }
     cost = 1
     x = 8
-    y = 10
+    y = 11
 }
 focus = {
     id = SAU_total_mobilization_laws4
@@ -659,7 +661,7 @@ focus = {
     }
     cost = 1
     x = 10
-    y = 10
+    y = 11
 }
 focus = {
     id = SAU_total_mobilization_laws6
@@ -680,7 +682,67 @@ focus = {
     }
     cost = 1
     x = 10
-    y = 11
+    y = 12
+}
+focus = {
+    id = SAU_total_mobilization_laws7
+    icon = GFX_focus_PLACEHOLDER
+    available_if_capitulated = no
+	 prerequisite = { focus = SAU_total_mobilization_laws1}
+    available = {
+has_full_control_of_state = -
+    } 
+    completion_reward = {
+
+    }
+    cost = 1
+    x = 12
+    y = 14
+}
+focus = {
+    id = SAU_total_mobilization_laws8
+    icon = GFX_focus_PLACEHOLDER
+    available_if_capitulated = no
+	 prerequisite = { focus = SAU_total_mobilization_laws7}
+    available = {
+has_full_control_of_state = -
+    } 
+    completion_reward = {
+
+    }
+    cost = 1
+    x = 12
+    y = 15
+}
+focus = {
+    id = SAU_total_mobilization_laws10
+    icon = GFX_focus_PLACEHOLDER
+    available_if_capitulated = no
+	 prerequisite = { focus = SAU_total_mobilization_laws9}
+    available = {
+has_full_control_of_state = -
+    } 
+    completion_reward = {
+
+    }
+    cost = 1
+    x = 12
+    y = 17
+}
+focus = {
+    id = SAU_total_mobilization_laws9
+    icon = GFX_focus_PLACEHOLDER
+    available_if_capitulated = no
+	 prerequisite = { focus = SAU_total_mobilization_laws8}
+    available = {
+has_full_control_of_state = -
+    } 
+    completion_reward = {
+
+    }
+    cost = 1
+    x = 12
+    y = 16
 }
 focus = {
     id = SAU_total_mobilization_laws5
@@ -692,12 +754,12 @@ focus = {
          
     } 
     completion_reward = {
+		remove_ideas = {SAU_NEW_COMPANY2}
 		add_ideas = {SAU_NEW_COMPANY4}
-		remove_ideas = SAU_NEW_COMPANY2
     }
     cost = 1
     x = 12
-    y = 10
+    y = 11
 }
 focus = {
 	id = SAU_new_dockyard

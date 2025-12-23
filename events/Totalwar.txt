@@ -83,7 +83,7 @@ country_event = {
 	id = saudiarabia.6
 	title = saudi_arabia.6t
 	desc = saudi_arabia.6d
-	picture = GFX_report_event_quit_india_movement
+	picture = GFX_EVENT_OLI
 	is_triggered_only = yes
 	option = {
 		name = saudi_arabia6.a
@@ -95,6 +95,12 @@ country_event = {
 			}
 				remove_ideas {
 				SAU_NEW_COMPANY1
+			}
+						remove_ideas {
+				SAU_ENG
+			}
+				remove_ideas {
+				SAU_USA
 			}
 	}
 }
