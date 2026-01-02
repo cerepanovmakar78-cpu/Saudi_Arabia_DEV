@@ -1,6 +1,6 @@
 characters={
 	SAU_abdulaziz_ibn_saud={
-		name="Bin Salman Al Saud"
+		name="King Abdulaziz bin Abdul Rahman Al Saud"
 		portraits={
 			civilian={
 				large=gfx\leaders\SAU\Chicken_king.dds
@@ -13,7 +13,7 @@ characters={
 		}
 	}
 		SAU_Chicken={
-		name="Bin Salman Al Saud2"
+		name="Chicken"
 		portraits={
 			civilian={
 				large=gfx\leaders\SAU\Chicken_king2.dds
@@ -21,6 +21,32 @@ characters={
 		}
 		country_leader = {
 			ideology=anarchist_communism
+			expire="1970.1.1.1"
+			id=-1
+		}
+	}
+			SAU_Chicken2={
+		name="KURVA"
+		portraits={
+			civilian={
+				large=gfx\leaders\SAU\Chicken_king3.dds
+			}
+		}
+		country_leader = {
+			ideology=falangism
+			expire="1970.1.1.1"
+			id=-1
+		}
+	}
+		SAU_Chicken3={
+		name="Sigma"
+		portraits={
+			civilian={
+				large=gfx\leaders\SAU\Chicken_king4.dds
+			}
+		}
+		country_leader = {
+			ideology=populism
 			expire="1970.1.1.1"
 			id=-1
 		}

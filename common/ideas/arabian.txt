@@ -25,10 +25,10 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-	production_speed_arms_factory_factor = 0.025
-	production_speed_dockyard_factor = 0.025
-    consumer_goods_factor = 0.025
-	local_resources_factor = 0.025
+	production_speed_arms_factory_factor = 0.075
+	production_speed_dockyard_factor = 0.075
+    consumer_goods_factor = 0.05
+	local_resources_factor = 0.1
 		}
 	}
 		SAU_USA = {
@@ -40,10 +40,10 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-	production_speed_arms_factory_factor = 0.05
-	production_speed_dockyard_factor = 0.05
+	production_speed_arms_factory_factor = 0.075
+	production_speed_dockyard_factor = 0.075
     consumer_goods_factor = 0.05
-	local_resources_factor = 0.05
+	local_resources_factor = 0.1
 		}
 	}
 		SAU_OLI = {
@@ -68,9 +68,7 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-			local_resources_factor = 0.075
-			consumer_goods_factor = -0.01
-			           
+			local_resources_factor = 0.1   
 		}
 	}
 	SAU_NEW_COMPANY1 = {
@@ -83,6 +81,8 @@ ideas = {
 		}
 		modifier = {
 consumer_goods_factor = -0.15
+industrial_capacity_factory = 0.25
+production_speed_dockyard_factor = 0.25   
 		}
 	}
 		SAU_PEOPLE_BAD = {
@@ -94,8 +94,9 @@ consumer_goods_factor = -0.15
 			always = yes
 		}
 		modifier = {
-stability_factor = -0.3
-war_support_factor = -0.3
+stability_factor = -0.4
+war_support_factor = -0.4
+industrial_capacity_factory = -0.40
 		}
 	}
 	SAU_PEOPLE_BAD1 = {
@@ -107,8 +108,9 @@ war_support_factor = -0.3
 			always = yes
 		}
 		modifier = {
-stability_factor = -0.15
-war_support_factor = -0.15
+stability_factor = -0.1
+war_support_factor = -0.1
+industrial_capacity_factory = -0.1
 		}
 	}
 		SAU_NEW_COMPANY2 = {
@@ -121,8 +123,9 @@ war_support_factor = -0.15
 		}
 		modifier = {
 stability_factor = -0.4
-war_support_factor = -0.05
-consumer_goods_factor = 0.9
+war_support_factor = -0.2
+consumer_goods_factor = 0.8
+industrial_capacity_factory = -0.4
 production_factory_max_efficiency_factor = -0.4
 production_factory_efficiency_gain_factor = -0.4
 		}
@@ -136,13 +139,23 @@ production_factory_efficiency_gain_factor = -0.4
 			always = yes
 		}
 		modifier = {
-stability_factor = -0.05
-war_support_factor = -0.05
-consumer_goods_factor = 0.05
-production_factory_max_efficiency_factor = -0.1
-production_factory_efficiency_gain_factor = -0.1
-
-
+stability_factor = -0.25
+consumer_goods_factor = 0.5
+industrial_capacity_factory = -0.25
+production_factory_max_efficiency_factor = -0.25
+production_factory_efficiency_gain_factor = -0.25
+		}
+	}
+				SAU_NEW_COMPANY5 = {
+		picture = generic_production_bonus
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+consumer_goods_factor = 0.25
 		}
 	}
 			SAU_NEW_COMPANY3 = {
@@ -154,10 +167,136 @@ production_factory_efficiency_gain_factor = -0.1
 			always = yes
 		}
 		modifier = {
-army_attack_factor = 0.15
-army_defence_factor = 0.15
-drift_defence_factor = 0.25                      
-experience_gain_factor = 0.5  
+army_attack_factor = 0.1
+army_defence_factor = 0.1
+drift_defence_factor = 0.15                     
+experience_gain_factor = 0.25
+		}
+	}
+				SAU_ARMY = {
+		picture = NORDIC_army_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+		        army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_org_factor = -0.5
+		}
+	}
+					SAU_ARMY1 = {
+		picture = NORDIC_army_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+		        army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				army_org_factor = -0.25
+		}
+	}
+						SAU_ARMY2 = {
+		picture = NORDIC_army_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+		        army_attack_factor = 0.025
+				army_defence_factor = 0.025
+				army_org_factor = 0.025
+		}
+	}
+		SAU_AIR = {
+		picture = NORDIC_airforce_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+air_attack_factor = -0.5
+air_defence_factor = -0.5
+air_agility_factor = -0.5
+		}
+	}
+			SAU_AIR1 = {
+		picture = NORDIC_airforce_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+air_attack_factor = -0.25
+air_defence_factor = -0.25
+air_agility_factor = -0.25
+		}
+	}
+			SAU_AIR2 = {
+		picture = NORDIC_airforce_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+air_attack_factor = 0.025
+air_defence_factor = 0.025
+air_agility_factor = 0.025
+		}
+	}
+					SAU_FLOT = {
+		picture = NORDIC_navy_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+navy_org_factor = -0.50
+naval_defense_factor = -0.50
+naval_speed_factor = -0.50
+		}
+	}
+						SAU_FLOT1 = {
+		picture = NORDIC_navy_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+navy_org_factor = -0.25
+naval_defense_factor = -0.25
+naval_speed_factor = -0.25
+		}
+	}
+						SAU_FLOT2 = {
+		picture = NORDIC_navy_democratic
+			allowed ={
+        original_tag = SAU
+		}
+		available = {
+			always = yes
+		}
+		modifier = {
+navy_org_factor = 0.025
+naval_defense_factor = 0.025
+naval_speed_factor = 0.025
 		}
 	}
 }

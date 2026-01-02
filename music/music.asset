@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "hoi4mainthemeallies.ogg"
+	file = "CHVK_WAGNER"
 	volume = 0.65
 }
 # SAUDI_ARABIA
@@ -16,3 +16,19 @@ music = {
 	file = "SAUDI_ARABIA.ogg"
 	volume = 0.65
 }
+music = {
+	name = "CHVK_WAGNER1"
+	file = "CHVK_WAGNER1.ogg"
+	volume = 0.65
+}
+music = {
+	name = "CHVK_WAGNER2"
+	file = "CHVK_WAGNER2.ogg"
+	volume = 0.65
+}
+music = {
+	name = "CHVK_WAGNER3"
+	file = "CHVK_WAGNER3.ogg"
+	volume = 0.65
+}
+

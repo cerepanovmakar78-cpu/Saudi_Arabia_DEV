@@ -31,3 +31,30 @@ music = {
 		}		
 	}	
 }
+music = {
+	song = "CHVK_WAGNER1"
+	chance = {
+		modifier = {
+			factor = 1
+			tag = SAU
+		}		
+	}	
+}
+music = {
+	song = "CHVK_WAGNER2"
+	chance = {
+		modifier = {
+			factor = 1
+			tag = SAU
+		}		
+	}	
+}
+music = {
+	song = "CHVK_WAGNER3"
+	chance = {
+		modifier = {
+			factor = 1
+			tag = SAU
+		}		
+	}	
+}

@@ -130,9 +130,77 @@ country_event = {
 	desc = saudi_arabia.8d
 	picture = GFX_report_event_generic_truck
 	is_triggered_only = yes
+	    trigger = {
+        has_completed_focus = FOCUS_SAU_NEW_POLITIC
+    }
 	option = {
 		name = saudi_arabia8.a
 add_command_power = -999
 add_political_power = -999
 	}
+	
+}
+country_event = {
+	id = saudiarabia.9
+	title = saudi_arabia.9t
+	desc = saudi_arabia.9d
+	picture = GFX_report_event_generic_truck
+	is_triggered_only = yes
+	option = {
+		name = saudi_arabia9.a
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+		 add_popularity = {
+        ideology = communism
+        popularity = 0.5
+		 }
+		add_popularity = {
+        ideology = neutrality
+        popularity = 0.5
+		 }
+	}
+		option = {
+		name = saudi_arabia9.b
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+        }
+		add_popularity = {
+        ideology = democratic
+        popularity = 0.5
+		 }
+		add_popularity = {
+        ideology = neutrality
+        popularity = 0.5
+		 }
+	}
+		option = {
+		name = saudi_arabia9.c
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = no 
+        }
+		 add_popularity = {
+        ideology = fascism
+        popularity = 0.5
+		 }
+		add_popularity = {
+        ideology = neutrality
+        popularity = 0.5
+		 }
+	}
+		option = {
+		name = saudi_arabia9.d
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no 
+        }
+		 add_popularity = {
+        ideology = neutrality
+        popularity = 1
+		 }
+	}
+	
 }

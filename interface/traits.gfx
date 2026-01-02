@@ -1,0 +1,34 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_CHICKEN"
+        texturefile = "gfx\leaders\SAU\Chicken_king2.dds"
+    }
+    spriteType = {
+        name = "GFX_CHICKEN1"
+        texturefile = "gfx\leaders\SAU\Chicken_king3.dds"
+    }
+    spriteType = {
+        name = "GFX_CHICKEN2"
+        texturefile = "gfx\leaders\SAU\Chicken_king4.dds"
+    }
+    spriteType = {
+        name = "GFX_focus_plan_SAU"
+        texturefile = "gfx\interface\goals\goal_plan_SAU.dds"
+    }
+        spriteType = {
+        name = "GFX_focus_plan_win_SAU"
+        texturefile = "gfx\interface\goals\goal_win_SAU.dds"
+    }
+            spriteType = {
+        name = "GFX_great_win_SAU"
+        texturefile = "gfx\interface\goals\goal_great_win_SAU.dds"
+    }
+         spriteType = {
+        name = "GFX_attack_plan_SAU"
+        texturefile = "gfx\interface\goals\goal_attack_plan_SAU.dds"
+    }
+             spriteType = {
+        name = "GFX_new_SAU"
+        texturefile = "gfx\interface\goals\goal_start_SAU.dds"
+    }
+}
