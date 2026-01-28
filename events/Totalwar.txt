@@ -156,25 +156,6 @@ country_event = {
         ideology = communism
         popularity = 0.5
 		 }
-		add_popularity = {
-        ideology = neutrality
-        popularity = 0.5
-		 }
-	}
-		option = {
-		name = saudi_arabia9.b
-        set_politics = {
-            ruling_party = democratic
-            elections_allowed = yes
-        }
-		add_popularity = {
-        ideology = democratic
-        popularity = 0.5
-		 }
-		add_popularity = {
-        ideology = neutrality
-        popularity = 0.5
-		 }
 	}
 		option = {
 		name = saudi_arabia9.c
@@ -184,10 +165,6 @@ country_event = {
         }
 		 add_popularity = {
         ideology = fascism
-        popularity = 0.5
-		 }
-		add_popularity = {
-        ideology = neutrality
         popularity = 0.5
 		 }
 	}

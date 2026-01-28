@@ -182,9 +182,9 @@ experience_gain_factor = 0.25
 			always = yes
 		}
 		modifier = {
-		        army_attack_factor = -0.5
-				army_defence_factor = -0.5
-				army_org_factor = -0.5
+		        army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				army_org_factor = -0.20
 		}
 	}
 					SAU_ARMY1 = {
@@ -196,23 +196,9 @@ experience_gain_factor = 0.25
 			always = yes
 		}
 		modifier = {
-		        army_attack_factor = -0.25
-				army_defence_factor = -0.25
-				army_org_factor = -0.25
-		}
-	}
-						SAU_ARMY2 = {
-		picture = NORDIC_army_democratic
-			allowed ={
-        original_tag = SAU
-		}
-		available = {
-			always = yes
-		}
-		modifier = {
-		        army_attack_factor = 0.025
-				army_defence_factor = 0.025
-				army_org_factor = 0.025
+		        army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				army_org_factor = -0.10
 		}
 	}
 		SAU_AIR = {

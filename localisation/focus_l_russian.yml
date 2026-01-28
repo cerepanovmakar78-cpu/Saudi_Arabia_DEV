@@ -89,10 +89,10 @@ SAU_total_mobilization_laws6_desc:0 "Закончить 2 этап войны"
 SAU_total_mobilization_laws7:0 "Почти полное восстановление экономики"
 SAU_total_mobilization_laws7_desc:0 "Мы почти закончили восстановление своей экономики"
 ######################
-SAU_new_army:0 "Улучшить армию"
-SAU_new_army_desc:0 "Нам нужна хорошая армия для захвата стран."
-SAU_new_army2:0 "Получить опыт"
-SAU_new_army2_desc:0 "Получить опыт"
+SAU_new_army:0 "Модернизация военных сил"
+SAU_new_army_desc:0 "Нам нужна хорошая армия для защиты страны."
+SAU_new_army2:0 "Переворужение 1936-1937"
+SAU_new_army2_desc:0 "Мы начинаем этап перевооружение армии."
 SAU_new_army4:0 "Переворужение"
 SAU_new_army4_desc:0 "-"
 SAU_new_army6:0 "Реформа армии"
@@ -106,6 +106,9 @@ SAU_new_air2:0 "Построить аэродромы"
 SAU_new_air2_desc:0 "Нам нужны аэродромы"
 SAU_new_air3:0 "Реформа ВВС"
 SAU_new_air3_desc:0 "Мы завершаем реформу ВВС"
+#######################################
+SAU_new_strong:0 "Конец модернизации военных сил"
+SAU_new_strong_desc:0 ""
 
 
 
