@@ -878,11 +878,12 @@ focus = {
     id = SAU_new_army4
 	icon = GFX_focus_generic_military_dictatorship
 x = 29 y = 3
-cost = 5
+cost = 3
 available = {
 }
     prerequisite = {focus = SAU_new_army2}
     completion_reward = {
+		army_experience = 150
 	news_event = {
 		id = saudiarabianews.2
 	}
